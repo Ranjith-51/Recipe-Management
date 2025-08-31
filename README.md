@@ -43,6 +43,12 @@ Recipe-Management-JSP/
 
 ---
 
+## Screenshots
+<img width="1132" height="882" alt="image" src="https://github.com/user-attachments/assets/af892143-b2f9-4bb6-bad1-1604365bdbae" />
+<img width="1887" height="509" alt="image" src="https://github.com/user-attachments/assets/81e98227-3564-43c3-872c-97b4f4281cc7" />
+<img width="972" height="852" alt="image" src="https://github.com/user-attachments/assets/c14e065a-12db-4e7b-a793-e146bccf995e" />
+<img width="908" height="423" alt="image" src="https://github.com/user-attachments/assets/47083db4-1ec5-4b0b-aad3-74274bb11ade" />
+
 ## ⚙️ Setup Instructions
 
 ### 1️⃣ Clone Repository
