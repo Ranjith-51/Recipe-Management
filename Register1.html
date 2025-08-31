@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register Recipe</title>
+    <style>
+        body {
+            font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, #f9fafb, #dbeafe, #bfdbfe);
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 550px;
+            background: #ffffff;
+            margin: 70px auto;
+            padding: 30px 35px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.15);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2563eb;
+            font-size: 26px;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: 600;
+            color: #111827;
+        }
+
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font-size: 15px;
+            margin-bottom: 18px;
+            transition: border 0.3s;
+        }
+
+        input[type="text"]:focus, textarea:focus {
+            border-color: #2563eb;
+            outline: none;
+            box-shadow: 0 0 5px rgba(37, 99, 235, 0.4);
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background: linear-gradient(135deg, #2563eb, #1d4ed8);
+            color: white;
+            border: none;
+            padding: 14px;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+            transform: translateY(-2px);
+        }
+
+        .link {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .link a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .link a:hover {
+            color: #1d4ed8;
+            text-decoration: underline;
+        }
+
+        /* Fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Register a New Recipe</h2>
+        <form action="Insert.jsp" method="post">
+            <label for="id">Recipe ID:</label>
+            <input type="text" name="id" required>
+
+            <label for="name">Recipe Name:</label>
+            <input type="text" name="name" required>
+
+            <label for="ingredients">Ingredients:</label>
+            <textarea name="ingredients" rows="3" required></textarea>
+
+            <label for="instructions">Instructions:</label>
+            <textarea name="instructions" rows="4" required></textarea>
+
+            <input type="submit" value="Save Recipe">
+        </form>
+        <div class="link">
+            <a href="View.jsp">View All Recipes</a>
+        </div>
+    </div>
+</body>
+</html>
